@@ -161,7 +161,7 @@ html.srml #srml-act .srml-b{width:62px!important;height:54px!important;font-size
 <!--SR-FULL-LANDSCAPE: sideways phone = full-height game screen, controls overlaid on the edges-->
 <style id="srml-full">
 @media (pointer:coarse) and (orientation:landscape){
-html.srml{--srml-scrw:min(100vw,calc(100dvh * var(--srml-ar)));--srml-gut:calc((100vw - var(--srml-scrw)) / 2)}
+html.srml{--srml-scrw:min(calc(100vw - 2 * var(--srml-side) - 8px),calc(100dvh * var(--srml-ar)));--srml-gut:calc((100vw - var(--srml-scrw)) / 2)}
 html.srml body{background:#000}
 html.srml #wrap{justify-content:center;align-items:center}
 html.srml #srml-scr{width:var(--srml-scrw)!important;max-width:none}
